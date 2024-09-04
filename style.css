@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+main{
+    max-width: 450px;
+    /* background: #e9e9e9; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px;
+}
+.logo{
+    /* background: #000; */
+}
+.logo img{
+    width: 100%;
+}
+.inputs_btns{
+    /* background: #000; */
+    gap: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputs_btns input{
+    flex: 1 0 0 ;
+    padding-left: 15px;
+    padding: 10px;
+    border: #a1ffab solid 1px;
+    background: #edffef;
+    border-radius: 4px;
+    outline: none;
+}
+.inputs_btns button{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.tareas{
+    overflow: auto;
+    max-height: 400px;
+    max-width: 450px;
+    scrollbar-width: none;
+}
+#lista_Tareas{
+    overflow-y: scroll;
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#lista_Tareas div{
+    border: solid 1px #e9e9e9;
+    padding: 10px;
+    position: relative;
+}
+.btn_eliminar {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#lista_Tareas div::after{
+    content: '';
+    width: 5px;
+    height: 100%;
+    background: #71ff82;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
